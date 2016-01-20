@@ -1,4 +1,8 @@
+set fisher_home ~/fisherman
+set fisher_config ~/.config/fisherman
+source $fisher_home/config.fish
 alias now='date +"%Y%m%d%H%M"'
+alias vim=/usr/local/bin/nvim
 
 
 set __fish_git_prompt_color_branch FF9900
@@ -45,13 +49,14 @@ set -g fish_color_cwd 0066FF
 set tacklebox_path ~/.tackle ~/.tacklebox
 
 set tacklebox_modules virtualfish virtualhooks
-set tacklebox_plugins python extract
+set tacklebox_plugins python extract grc
 set tacklebox_theme urdh
 
 . ~/.tacklebox/tacklebox.fish
 
 rvm default
 set -gx PATH $PATH /Users/cat/bin
+set -gx PATH $PATH /usr/local/sbin
 set -gx GOBIN $HOME/bin
 set -gx GOPATH $HOME/go
 
