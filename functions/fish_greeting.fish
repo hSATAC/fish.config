@@ -1,0 +1,1 @@
+/Users/cat/.config/fisherman/scorphish/fish_greeting.fish
