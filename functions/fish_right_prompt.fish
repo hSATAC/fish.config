@@ -1,1 +1,1 @@
-/Users/cat/.config/fisherman/scorphish/fish_right_prompt.fish
+/Users/cat/.config/fisherman/functions/fish_right_prompt.fish

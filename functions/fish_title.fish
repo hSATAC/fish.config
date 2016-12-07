@@ -1,1 +1,1 @@
-/Users/cat/.config/fisherman/scorphish/fish_title.fish
+/Users/cat/.config/fisherman/functions/fish_title.fish

@@ -1,6 +1,6 @@
 set fisher_home ~/fisherman
 set fisher_config ~/.config/fisherman
-source $fisher_home/config.fish
+#source $fisher_home/config.fish
 alias now='date +"%Y%m%d%H%M"'
 alias vim=/usr/local/bin/nvim
 
@@ -13,7 +13,7 @@ function reload
 end
 
 function subl
-    open -a "Sublime Text.app" $argv
+    open -a "Sublime Text 2.app" $argv
 end
 
 function ll
@@ -61,9 +61,9 @@ set -gx GOBIN $HOME/bin
 set -gx GOPATH $HOME/go
 
 #eval (docker-machine env default)
-set -x DOCKER_TLS_VERIFY "1";
-set -x DOCKER_HOST "tcp://192.168.99.100:2376";
-set -x DOCKER_CERT_PATH "/Users/cat/.docker/machine/machines/default";
-set -x DOCKER_MACHINE_NAME "default";
+#set -x DOCKER_TLS_VERIFY "1";
+#set -x DOCKER_HOST "tcp://192.168.99.100:2376";
+#set -x DOCKER_CERT_PATH "/Users/cat/.docker/machine/machines/default";
+#set -x DOCKER_MACHINE_NAME "default";
 
 eval (direnv hook fish)
