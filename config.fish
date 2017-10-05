@@ -1,8 +1,10 @@
 set fisher_home ~/fisherman
 set fisher_config ~/.config/fisherman
-#source $fisher_home/config.fish
 alias now='date +"%Y%m%d%H%M"'
 alias vim=/usr/local/bin/nvim
+alias such=git
+alias very=git
+alias wow='git status'
 
 
 set __fish_git_prompt_color_branch FF9900
@@ -46,24 +48,10 @@ set -g -x fish_greeting ''
 set -g -x LSCOLORS ExGxfxfxCxdxdxhbadbxbd
 set -g fish_color_cwd 0066FF
 
-set tacklebox_path ~/.tackle ~/.tacklebox
-
-set tacklebox_modules virtualfish virtualhooks
-set tacklebox_plugins python extract grc
-set tacklebox_theme urdh
-
-. ~/.tacklebox/tacklebox.fish
+set -g theme_display_virtualenv no
 
 rvm default
 set -gx PATH $PATH /Users/cat/bin
 set -gx PATH $PATH /usr/local/sbin
 set -gx GOBIN $HOME/bin
 set -gx GOPATH $HOME/go
-
-#eval (docker-machine env default)
-#set -x DOCKER_TLS_VERIFY "1";
-#set -x DOCKER_HOST "tcp://192.168.99.100:2376";
-#set -x DOCKER_CERT_PATH "/Users/cat/.docker/machine/machines/default";
-#set -x DOCKER_MACHINE_NAME "default";
-
-eval (direnv hook fish)
