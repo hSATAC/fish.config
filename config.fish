@@ -5,6 +5,7 @@ alias vim=/usr/local/bin/nvim
 alias such=git
 alias very=git
 alias wow='git status'
+alias marked='open -a Marked'
 
 
 set __fish_git_prompt_color_branch FF9900
@@ -44,6 +45,10 @@ function pr
     hub pull-request -b kkbox:"$base" -h kkbox:$branch;
 end
 
+function send_to_kindle
+    echo mobi | mutt -s mobi -a "$argv[1]" -- hsatac@kindle.cn
+end
+
 set -g -x fish_greeting ''
 set -g -x LSCOLORS ExGxfxfxCxdxdxhbadbxbd
 set -g fish_color_cwd 0066FF
@@ -53,5 +58,7 @@ set -g theme_display_virtualenv no
 rvm default
 set -gx PATH $PATH /Users/cat/bin
 set -gx PATH $PATH /usr/local/sbin
+set -gx PATH $PATH /Users/cat/.mix/escripts
+set -gx PATH $PATH /Users/cat/.cargo/bin
 set -gx GOBIN $HOME/bin
 set -gx GOPATH $HOME/go
