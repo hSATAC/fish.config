@@ -58,7 +58,7 @@ set -g theme_display_virtualenv no
 rvm default
 set -gx PATH $PATH /Users/cat/bin
 set -gx PATH $PATH /usr/local/sbin
-set -gx PATH $PATH /Users/cat/.mix/escripts
-set -gx PATH $PATH /Users/cat/.cargo/bin
+#set -gx PATH $PATH /Users/cat/.mix/escripts
+#set -gx PATH $PATH /Users/cat/.cargo/bin
 set -gx GOBIN $HOME/bin
 set -gx GOPATH $HOME/go
