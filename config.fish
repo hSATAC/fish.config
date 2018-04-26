@@ -62,3 +62,6 @@ set -gx PATH $PATH /usr/local/sbin
 #set -gx PATH $PATH /Users/cat/.cargo/bin
 set -gx GOBIN $HOME/bin
 set -gx GOPATH $HOME/go
+
+# direnv
+eval (direnv hook fish)
