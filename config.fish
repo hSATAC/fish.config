@@ -6,6 +6,8 @@ alias such=git
 alias very=git
 alias wow='git status'
 alias marked='open -a Marked'
+alias k=kubectl
+alias mk=minikube
 
 
 set __fish_git_prompt_color_branch FF9900
