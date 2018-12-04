@@ -54,6 +54,7 @@ set -g -x LSCOLORS ExGxfxfxCxdxdxhbadbxbd
 set -g fish_color_cwd 0066FF
 
 set -g theme_display_virtualenv no
+set -g theme_display_nvm no
 
 rvm default
 set -gx PATH /Users/cat/bin $PATH

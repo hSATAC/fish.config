@@ -1,1 +1,0 @@
-/Users/cat/.config/fisherman/nvm/functions/node.fish
