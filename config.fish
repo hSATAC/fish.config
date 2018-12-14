@@ -69,5 +69,12 @@ set -gx GOPATH $HOME/go
 # For git gpg sign
 set -x GPG_TTY (tty)
 
+# kubeconfig
+set -gx KUBECONFIG $HOME/.kube/aia-txg-config
+set -gx KUBECONFIG $KUBECONFIG:$HOME/.kube/dev-gce-config
+set -gx KUBECONFIG $KUBECONFIG:$HOME/.kube/config
+
+set -gx BYOBU_PREFIX /usr/local
+
 # direnv
 eval (direnv hook fish)

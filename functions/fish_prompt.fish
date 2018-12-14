@@ -100,11 +100,14 @@ function fish_prompt
   _prompt_rust $gray $orange
 
   if [ "$NVM_BIN" != "$LAST_NVM_BIN" -o -z "$NVM_VERSION" ]
-    #set -gx NVM_VERSION (node --version)
-    #set -gx LAST_NVM_BIN $NVM_BIN
+    set -gx NVM_VERSION (node --version)
+    set -gx LAST_NVM_BIN $NVM_BIN
   end
 
   _prompt_nvm $gray $green
+
+  # Show kubectl
+  echo -n -s (set_color blue) (__kube_prompt) " " (set_color normal)
 
   set_color -o 666
   if set -q SCORPHISH_GIT_INFO_ON_FIRST_LINE
@@ -125,6 +128,7 @@ function fish_prompt
       echo -n -s $gray '‹' $yellow $git_branch $red $dirty_remotes $gray '›' $normal
     end
   end
+
 
   if test $exit_code -ne 0
     set arrow_colors 600 900 c00 f00
