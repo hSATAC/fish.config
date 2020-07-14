@@ -9,6 +9,10 @@ alias marked='open -a Marked'
 alias k=kubectl
 alias mk=minikube
 
+# foobar2000
+alias fn='http POST http://192.168.1.51:8880/api/player/next > /dev/null'
+alias fp='http POST http://192.168.1.51:8880/api/player/pause/toggle > /dev/null'
+
 
 set __fish_git_prompt_color_branch FF9900
 . /usr/local/opt/fish/share/fish/functions/__fish_git_prompt.fish
@@ -61,6 +65,7 @@ set -g theme_display_nvm no
 rvm default
 set -gx PATH /Users/cat/bin $PATH
 set -gx PATH $PATH /usr/local/sbin
+set -gx PATH $PATH /usr/local/kubebuilder/bin
 #set -gx PATH $PATH /Users/cat/.mix/escripts
 #set -gx PATH $PATH /Users/cat/.cargo/bin
 set -gx GOBIN $HOME/bin
@@ -71,8 +76,8 @@ set -x GPG_TTY (tty)
 
 # kubeconfig
 set -gx KUBECONFIG $HOME/.kube/aia-txg-config
-set -gx KUBECONFIG $KUBECONFIG:$HOME/.kube/dev-gce-config
-set -gx KUBECONFIG $KUBECONFIG:$HOME/.kube/config
+set -gx KUBECONFIG $HOME/.kube/aia-tpe-config
+set -gx KUBECONFIG $HOME/.kube/config:$KUBECONFIG
 
 set -gx BYOBU_PREFIX /usr/local
 
