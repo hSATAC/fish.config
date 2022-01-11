@@ -15,7 +15,7 @@ alias fp='http POST http://192.168.1.51:8880/api/player/pause/toggle > /dev/null
 
 
 set __fish_git_prompt_color_branch FF9900
-. ~/.config/fish/functions/__fish_git_prompt.fish
+#. ~/.config/fish/functions/__fish_git_prompt.fish
 
 function reload
     source ~/.config/fish/config.fish
@@ -64,7 +64,7 @@ set -g theme_display_nvm no
 
 rvm default
 set -gx PATH /home/cat/bin $PATH
-set -gx PATH $PATH /usr/local/sbin
+set -gx PATH $PATH /opt/homebrew/bin
 #set -gx PATH $PATH /Users/cat/.mix/escripts
 #set -gx PATH $PATH /Users/cat/.cargo/bin
 set -gx GOBIN $HOME/bin
