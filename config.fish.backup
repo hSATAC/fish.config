@@ -64,11 +64,12 @@ set -g theme_display_nvm no
 
 rvm default
 set -gx PATH /home/cat/bin $PATH
-#set -gx PATH $PATH /opt/homebrew/bin
-#set -gx PATH $PATH $HOME/Library/Python/3.8/bin
+set -gx PATH $PATH /opt/homebrew/bin
+set -gx PATH $PATH $HOME/Library/Python/3.8/bin
+#set -gx PATH $PATH /Users/cat/.mix/escripts
+#set -gx PATH $PATH /Users/cat/.cargo/bin
 set -gx GOBIN $HOME/bin
 set -gx GOPATH $HOME/go
-fish_add_path /opt/homebrew/bin
 
 
 # For git gpg sign
@@ -83,6 +84,3 @@ set -gx BYOBU_PREFIX /usr/local
 
 # direnv
 eval (direnv hook fish)
-
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/cat/Downloads/google-cloud-sdk/path.fish.inc' ]; . '/Users/cat/Downloads/google-cloud-sdk/path.fish.inc'; end
