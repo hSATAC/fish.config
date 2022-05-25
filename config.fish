@@ -69,6 +69,7 @@ set -gx PATH /home/cat/bin $PATH
 set -gx GOBIN $HOME/bin
 set -gx GOPATH $HOME/go
 fish_add_path /opt/homebrew/bin
+fish_add_path $HOME/bin
 
 
 # For git gpg sign
